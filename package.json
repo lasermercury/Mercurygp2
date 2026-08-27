@@ -2,6 +2,9 @@
   "name": "mercury-gp-website",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
@@ -76,6 +79,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/node": "26.4.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
