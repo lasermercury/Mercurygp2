@@ -1,15 +1,12 @@
-import AdminPanel from '@/components/admin/AdminPanel';
+import AdminPageClient from './AdminPageClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Admin Panel — SEO, Geo & AI Optimization',
-  description: 'Mercury GP admin dashboard for managing SEO, geographic targeting, AI optimization, Google integrations, and structured data.',
-  robots: {
-    index: false,
-    follow: false,
-  },
+  title: 'Admin Panel — Mercury GP',
+  description: 'Admin dashboard for managing SEO, Geo, AI optimization, and integrations.',
+  robots: { index: false, follow: false },
 };
 
 export default function AdminPage() {
-  return <AdminPanel />;
+  return <AdminPageClient />;
 }
