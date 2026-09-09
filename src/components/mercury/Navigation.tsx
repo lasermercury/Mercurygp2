@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
-import { Menu, Globe, Sun, Moon } from 'lucide-react';
+import { Menu, Globe, Sun, Moon, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -160,6 +160,16 @@ export default function Navigation() {
                 <Globe className="size-4" />
                 <span>{locale === 'en' ? 'FA' : 'EN'}</span>
               </Button>
+              <a href="/admin">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  <Settings className="size-4" />
+                  <span className="sr-only">Admin</span>
+                </Button>
+              </a>
 
               {/* Mobile Hamburger */}
               <Sheet>
