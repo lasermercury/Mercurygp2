@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import ThemeProvider from '@/components/ThemeProvider';
 import StructuredData from '@/components/StructuredData';
 import GoogleScripts from '@/components/GoogleScripts';
@@ -131,6 +132,7 @@ export default function RootLayout({
           <StructuredData />
           <GoogleScripts />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
